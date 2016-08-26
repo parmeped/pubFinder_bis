@@ -1,5 +1,5 @@
-# MadeUsApp
-Android applications to search resturants, cafes, hospitals, police station and mony more to find in a specific area.
+# Find Nearby
+Android application to search resturants, cafes, hospitals, police station and mony more to find in a specific area.
 
 ###Features
 - Search resturants, atm, cafes, hospitals, police stations and many more places in a particular area.
