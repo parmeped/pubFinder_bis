@@ -38,25 +38,25 @@ public class DisplayFavoritesActivity extends AppCompatActivity {
     private void prepareHotelsData() {
         ref.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Map<String, Object> newPlace = (Map<String,Object>)dataSnapshot.getValue();
-                String name1 = String.valueOf(newPlace.get("Name"));
-                String vicinity1 = String.valueOf(newPlace.get("Vicinity"));
-                System.out.println("Message: " + newPlace.get("name"));
-                System.out.println("Name: " + newPlace.get("vicinity"));
+                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                    Map<String, Object> newPlace = (Map<String,Object>)dataSnapshot.getValue();
+                    String name1 = String.valueOf(newPlace.get("Name"));
+                    String vicinity1 = String.valueOf(newPlace.get("Vicinity"));
+                    System.out.println("Message: " + newPlace.get("name"));
+                    System.out.println("Name: " + newPlace.get("vicinity"));
 
-            }
+                }
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                Map<String, Object> newPlace = (Map<String,Object>)dataSnapshot.getValue();
-                String name1 = String.valueOf(newPlace.get("Name"));
-                String vicinity1 = String.valueOf(newPlace.get("Vicinity"));
-                System.out.println("Message: " + newPlace.get("name"));
-                System.out.println("Name: " + newPlace.get("vicinity"));
+                @Override
+                public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                    Map<String, Object> newPlace = (Map<String,Object>)dataSnapshot.getValue();
+                    String name1 = String.valueOf(newPlace.get("Name"));
+                    String vicinity1 = String.valueOf(newPlace.get("Vicinity"));
+                    System.out.println("Message: " + newPlace.get("name"));
+                    System.out.println("Name: " + newPlace.get("vicinity"));
 
 
-            }
+                }
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
